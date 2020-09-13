@@ -25,6 +25,8 @@ function zsh_install {
     echo "[?] Change ZSH_THEME='robbyrussell' to ZSH_THEME='agnoster' in \$HOME/.zshrc"
     echo "[?] Change font on terminal to 'Hack Regular'"
     echo
+    echo "synclient VertScrollDelta=-211" >> $HOME/.zshrc
+    echo "synclient HorizScrollDelta=-211" >> $HOME/.zshrc
 }
 
 function flat_remix_install {
