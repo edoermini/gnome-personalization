@@ -18,5 +18,7 @@ ehco "[+] Installing oh my zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm "./install.sh"
 
-echo "[?] change ZSH_THEME='robbyrussell' to ZSH_THEME='agnoster'"
+echo
+echo "[?] Change ZSH_THEME='robbyrussell' to ZSH_THEME='agnoster' in \$HOME/.zshrc"
+echo "[?] Change font on terminal to 'Hack Regular'"
 echo
