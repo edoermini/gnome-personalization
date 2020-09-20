@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 function zsh_install {
     echo "[+] Installing fonts packet..."
@@ -18,6 +18,8 @@ function zsh_install {
     curl -fsSL "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh" > oh-my-zsh-install.sh
     sh "oh-my-zsh-install.sh" --unattended
     rm "oh-my-zsh-install.sh"
+    
+    sudo apt autoremove
 
     echo
     echo "[?] Change ZSH_THEME='robbyrussell' to ZSH_THEME='agnoster' in \$HOME/.zshrc"
@@ -60,8 +62,8 @@ function flat_remix_install {
 }
 
 sudo apt install gnome-tweak-tool
-flat_remix_install()
-zsh_install()
+flat_remix_install
+zsh_install
 
 echo "[+] Gnome extensions to install:"
 echo "* Dash to panel"
